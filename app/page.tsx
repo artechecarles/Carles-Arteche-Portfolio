@@ -1,8 +1,9 @@
 import Link from "next/link"
-import { Mail, Github, Linkedin, ExternalLink } from "lucide-react"
+import { Mail, Github, Linkedin, Download, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 
 export default function Portfolio() {
   return (
@@ -53,7 +54,12 @@ export default function Portfolio() {
                   <Mail className="mr-2 h-4 w-4" />
                   Contact Me
                 </Button>
-                <Button variant="outline">Download CV</Button>
+                <Button variant="outline" asChild>
+                  <a href="/cv.pdf" download target="_blank" rel="noopener noreferrer">
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Resume
+                  </a>
+                </Button>
               </div>
               <div className="flex gap-4">
                 <Link href="https://github.com/artechecarles" target="_blank" rel="noopener noreferrer">
@@ -71,13 +77,9 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="flex items-center justify-center">
-              <img
-                src="/placeholder.svg?height=400&width=400"
-                alt="Profile"
-                width={400}
-                height={400}
-                className="aspect-square rounded-full object-cover border-4 border-border"
-              />
+              <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden border-4 border-border">
+                <Image src="/profile-image.jpg" alt="Profile" fill className="object-cover" priority />
+              </div>
             </div>
           </div>
         </section>
@@ -86,14 +88,14 @@ export default function Portfolio() {
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
             <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">About Me</h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-               I am a creative and proactive individual with strong teamwork and 
-problem-solving skills. I stand out for my sense of responsibility, 
-adaptability, and motivation to lead and contribute to meaningful projects. I 
-am driven by continuous learning and committed to expanding both my 
-technical and personal skills to deliver impactful results. 
+              I am a creative and proactive individual with strong teamwork and problem-solving skills. I stand out for
+              my sense of responsibility, adaptability, and motivation to lead and contribute to meaningful projects. I
+              am driven by continuous learning and committed to expanding both my technical and personal skills to
+              deliver impactful results.
             </p>
           </div>
         </section>
+
         <section id="skills" className="container py-12 md:py-24 lg:py-32">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
             <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Skills</h2>
@@ -164,13 +166,13 @@ technical and personal skills to deliver impactful results.
                   <p>artechecarles@gmail.com</p>
                 </div>
                 <div className="flex gap-4">
-                  <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/artechecarles" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="icon">
                       <Github className="h-5 w-5" />
                       <span className="sr-only">GitHub</span>
                     </Button>
                   </Link>
-                  <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.linkedin.com/in/carlesarteche/" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="icon">
                       <Linkedin className="h-5 w-5" />
                       <span className="sr-only">LinkedIn</span>
@@ -236,16 +238,16 @@ technical and personal skills to deliver impactful results.
       <footer className="border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Carles Arteche. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/artechecarles" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/carlesarteche/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
