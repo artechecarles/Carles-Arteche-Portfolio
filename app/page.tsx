@@ -53,7 +53,7 @@ export default function Portfolio() {
                   <Mail className="mr-2 h-4 w-4" />
                   Contact Me
                 </Button>
-                <Button variant="outline">Download Resume</Button>
+                <Button variant="outline">Download CV</Button>
               </div>
               <div className="flex gap-4">
                 <Link href="https://github.com/artechecarles" target="_blank" rel="noopener noreferrer">
