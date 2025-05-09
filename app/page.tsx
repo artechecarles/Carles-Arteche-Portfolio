@@ -88,10 +88,7 @@ export default function Portfolio() {
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
             <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">About Me</h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              I am a creative and proactive individual with strong teamwork and problem-solving skills. I stand out for
-              my sense of responsibility, adaptability, and motivation to lead and contribute to meaningful projects. I
-              am driven by continuous learning and committed to expanding both my technical and personal skills to
-              deliver impactful results.
+              I’m a creative and proactive person with strong teamwork and problem-solving skills. I’m known for being responsible, adaptable, and motivated to contribute to meaningful projects. I value continuous learning and always look for opportunities to grow and deliver solid, effective results.
             </p>
           </div>
         </section>
