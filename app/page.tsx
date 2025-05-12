@@ -229,6 +229,8 @@ export default function Portfolio() {
                   <Badge>TypeScript</Badge>
                   <Badge>HTML & CSS</Badge>
                   <Badge>JavaScript</Badge>
+                  <Badge>SASS</Badge>
+
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2 p-4 bg-muted rounded-lg">
