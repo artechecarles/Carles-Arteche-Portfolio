@@ -1,10 +1,12 @@
 import Link from "next/link"
-import { Mail, Github, Linkedin, Download } from "lucide-react"
+import { Mail, Github, Linkedin, Download, Calendar, Building, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { ContactForm } from "@/components/contact-form"
+import { NavLinks } from "@/components/nav-links"
+import { SmoothScrollLink } from "@/components/smooth-scroll-link"
 
 export default function Portfolio() {
   return (
@@ -15,23 +17,15 @@ export default function Portfolio() {
             <Link href="/" className="mr-6 flex items-center space-x-2">
               <span className="font-bold">Portfolio</span>
             </Link>
-            <nav className="flex items-center space-x-6 text-sm font-medium">
-              <Link href="#about" className="transition-colors hover:text-foreground/80">
-                About
-              </Link>
-              <Link href="#skills" className="transition-colors hover:text-foreground/80">
-                Skills
-              </Link>
-              <Link href="#contact" className="transition-colors hover:text-foreground/80">
-                Contact
-              </Link>
-            </nav>
+            <NavLinks />
           </div>
           <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
             <div className="w-full flex-1 md:w-auto md:flex-none">
-              <Button variant="outline" className="ml-auto hidden h-8 md:flex">
-                <Mail className="mr-2 h-4 w-4" />
-                Contact
+              <Button variant="outline" className="ml-auto hidden h-8 md:flex" asChild>
+                <SmoothScrollLink href="#contact">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Contact
+                </SmoothScrollLink>
               </Button>
             </div>
           </div>
@@ -52,9 +46,11 @@ export default function Portfolio() {
                   <p>I build accessible, responsive, and functional web applications with modern technologies.</p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button>
-                    <Mail className="mr-2 h-4 w-4" />
-                    Contact Me
+                  <Button asChild>
+                    <SmoothScrollLink href="#contact">
+                      <Mail className="mr-2 h-4 w-4" />
+                      Contact Me
+                    </SmoothScrollLink>
                   </Button>
                   <Button variant="outline" asChild>
                     <a href="/cv.pdf" download target="_blank" rel="noopener noreferrer">
@@ -96,6 +92,121 @@ export default function Portfolio() {
                 responsible, adaptable, and motivated to contribute to meaningful projects. I value continuous learning
                 and always look for opportunities to grow and deliver solid, effective results.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section id="experience" className="py-12 md:py-24 lg:py-32 bg-muted/50">
+          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center mb-12">
+              <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Experience</h2>
+              <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                My professional journey and work experience.
+              </p>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-8">
+              {/* Experience Item 1 */}
+              <div className="relative pl-8 border-l-2 border-muted-foreground/20 pb-10">
+                <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary"></div>
+                <div className="space-y-3">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h3 className="text-xl font-bold">Full Stack Developer</h3>
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <Calendar className="mr-1 h-4 w-4" />
+                      <span>Jul 2023 - Present</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center text-primary">
+                    <Building className="mr-2 h-4 w-4" />
+                    <span className="font-medium">T-Systems</span>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Working on full-stack development for a German client using Angular 14, Java 17 (Spring Boot), and
+                    Ng Zorro. Responsible for improving UI/UX with HTML/CSS, and collaborating in an agile environment
+                    with CI pipelines and JIRA.
+                  </p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <Badge variant="secondary">Angular</Badge>
+                    <Badge variant="secondary">TypeScript</Badge>
+                    <Badge variant="secondary">Java</Badge>
+                    <Badge variant="secondary">Spring Boot</Badge>
+                    <Badge variant="secondary">HTML & CSS</Badge>
+                    <Badge variant="secondary">MySQL</Badge>
+                    <Badge variant="secondary">Docker</Badge>
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience Item 2 */}
+              <div className="relative pl-8 border-l-2 border-muted-foreground/20 pb-10">
+                <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary"></div>
+                <div className="space-y-3">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h3 className="text-xl font-bold">Frontend Developer</h3>
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <Calendar className="mr-1 h-4 w-4" />
+                      <span>Dec 2022 - Jul 2023</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center text-primary">
+                    <Building className="mr-2 h-4 w-4" />
+                    <span className="font-medium">Grupo Oesía</span>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Focused on frontend development using Angular, HTML, and CSS, with some backend support in Spring
+                    Boot. Contributed to interface design, usability improvements, and worked within agile sprints using
+                    CI tools.
+                  </p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <Badge variant="secondary">Angular</Badge>
+                    <Badge variant="secondary">TypeScript</Badge>
+                    <Badge variant="secondary">HTML & CSS</Badge>
+                    <Badge variant="secondary">Java</Badge>
+                    <Badge variant="secondary">Git</Badge>
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience Item 3 */}
+              <div className="relative pl-8 border-l-2 border-muted-foreground/20">
+                <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary"></div>
+                <div className="space-y-3">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <h3 className="text-xl font-bold">Junior Web Developer (Intern)</h3>
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <Calendar className="mr-1 h-4 w-4" />
+                      <span>Sep 2021 - Jul 2022</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center text-primary">
+                    <Building className="mr-2 h-4 w-4" />
+                    <span className="font-medium">Mecalux IT</span>
+                  </div>
+                  <p className="text-muted-foreground">
+                    Completed a dual internship developing and testing features in Angular and Java (Spring Boot).
+                    Supported both frontend and backend tasks, and used tools like Kendo, Liquibase, and Bootstrap in a
+                    continuous integration environment.
+                  </p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <Badge variant="secondary">Angular</Badge>
+                    <Badge variant="secondary">HTML & CSS</Badge>
+                    <Badge variant="secondary">TypeScript</Badge>
+                    <Badge variant="secondary">Java (Spring Boot)</Badge>
+                    <Badge variant="secondary">Responsive Design</Badge>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-center">
+                <Button variant="outline" asChild className="group">
+                  <a href="/cv.pdf" download target="_blank" rel="noopener noreferrer">
+                    View Full Resume
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
