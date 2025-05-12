@@ -42,14 +42,16 @@ export async function sendContactEmail(formData: FormData): Promise<{ success: b
     `
 
     // Send the email using our email service
-    const emailSent = await sendEmail({
+    const { success, error } = await sendEmail({
       to: "artechecarles@gmail.com",
       subject,
       html: htmlContent,
       text: textContent,
+      replyTo: email, // Add the sender's email as reply-to
     })
 
-    if (!emailSent) {
+    if (!success) {
+      console.error("Failed to send email:", error)
       return {
         success: false,
         message: "Failed to send message. Please try again later.",
