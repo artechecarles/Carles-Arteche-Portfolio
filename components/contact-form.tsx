@@ -26,6 +26,7 @@ export function ContactForm() {
         form.reset()
       }
     } catch (error) {
+      console.error("Form submission error:", error)
       setFormStatus({
         success: false,
         message: "An unexpected error occurred. Please try again later.",
