@@ -1,0 +1,85 @@
+FullStack Developer 
+ 
+Contact
+ 
+ artechecarles@gmail.com 
+ 654103480 
+ Cerdanyola Del Vallès 
+ 
+ 
+LinkedIn 
+->Linkedin Carles Arteche 
+ 
+  
+Licenses 
+● Car license B 
+● Motorcycle license A 
+ 
+ 
+ 
+ 
+               CARLES ARTECHE RODRIGUEZ  
+ 
+Competencies 
+I am a creative and proactive individual with strong teamwork and 
+problem-solving skills. I stand out for my sense of responsibility, 
+adaptability, and motivation to lead and contribute to meaningful projects. I 
+am driven by continuous learning and committed to expanding both my 
+technical and personal skills to deliver impactful results. 
+ 
+Experience 
+ 
+FullStack Developer : T-Systems → July 2023 - Actuality  
+- Client: German-based (daily communication in English) 
+- Development of full-stack solutions using Angular 14, Spring Boot, and 
+Java 17 
+- Frontend development focused on design and usability using HTML, CSS, 
+and Ng Zorro 
+- Backend tasks involving REST API development and data processing with 
+Spring Boot 
+- Agile environment with JIRA and Continuous Integration pipelines 
+ 
+ 
+Frontend Developer at Grupo Oesía → December 2022 - July 2023 
+- Angular 
+- HTML + CSS 
+- Front-end tasks (design + usability) 
+- Front + Back tasks 
+- Framework: BootStrap, SpringBoot 
+- JIRA Continuous Integration 
+ 
+Mecalux I.T. Intern (DUAL Internship)→ September 2021 - July 2022 
+               -Angular 
+               - Front-end Tasks (design + usability) 
+               - Front-end tasks + Backend Java(Spring-Boot) 
+               - HTML and CSS for design 
+               - Application testing both in Angular and Java 
+               - Frameworks such as: Kendo, Bootstrap, Spring, Liquibase 
+               - Continuous integration 
+ 
+ Internship at Port D'informació Científica (UAB) → 350h 
+ 
+ 
+
+Academic background 
+Superior Grade DAM 
+Computer Science (Grado Medio) 
+ESO 
+IES Jaume Balmes 
+IES Jaume Balmes 
+IES Banús 
+2020-2022 
+2018-2020 
+2013-2017 
+   
+ 
+Languages and technologies 
+ 
+    Angular, Spring Boot, Java, Typescript, JavaScript, Bootstrap, Docker, Github 
+    Kendo, Python, HTML, CSS, GraphQL, NzZORRO 
+ 
+Languages 
+ 
+    Inglés: First Certificate (B2)  
+     Español: Native  
+     Catalan: Native
