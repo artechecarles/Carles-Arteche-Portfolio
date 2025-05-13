@@ -7,6 +7,7 @@ import Image from "next/image"
 import { ContactForm } from "@/components/contact-form"
 import { NavLinks } from "@/components/nav-links"
 import { SmoothScrollLink } from "@/components/smooth-scroll-link"
+import { TypewriterText } from "@/components/typewriter-text"
 
 export default function Portfolio() {
   return (
@@ -39,7 +40,8 @@ export default function Portfolio() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I'm <span className="text-primary">Carles Arteche</span>
+                    <TypewriterText text="Hi, I'm " speed={80} />
+                    <TypewriterText text="Carles Arteche" speed={80} delay={1200} className="text-primary" />
                   </h1>
                   <p className="text-xl text-muted-foreground">Full Stack Developer</p>
                 </div>
