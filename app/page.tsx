@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mail, Github, Linkedin, Download, Calendar, Building, ArrowRight } from "lucide-react"
+import { Mail, Github, Linkedin, Calendar, Building, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -8,6 +8,7 @@ import { ContactForm } from "@/components/contact-form"
 import { NavLinks } from "@/components/nav-links"
 import { SmoothScrollLink } from "@/components/smooth-scroll-link"
 import { TypewriterText } from "@/components/typewriter-text"
+import { ResumeDownloadButton } from "@/components/resume-download-button"
 
 export default function Portfolio() {
   return (
@@ -55,12 +56,7 @@ export default function Portfolio() {
                       Contact Me
                     </SmoothScrollLink>
                   </Button>
-                  <Button variant="outline" asChild>
-                    <a href="/cv.pdf" download target="_blank" rel="noopener noreferrer">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download Resume
-                    </a>
-                  </Button>
+                  <ResumeDownloadButton />
                 </div>
                 <div className="flex gap-4">
                   <Link href="https://github.com/artechecarles" target="_blank" rel="noopener noreferrer">
@@ -205,7 +201,7 @@ export default function Portfolio() {
 
               <div className="flex justify-center">
                 <Button variant="outline" asChild className="group">
-                  <a href="/cv.pdf" download target="_blank" rel="noopener noreferrer">
+                  <a href="/resume.html" target="_blank" rel="noopener noreferrer">
                     View Full Resume
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </a>
