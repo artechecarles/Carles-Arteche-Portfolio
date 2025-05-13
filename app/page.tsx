@@ -11,7 +11,7 @@ import { SmoothScrollLink } from "@/components/smooth-scroll-link"
 export default function Portfolio() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70">
         <div className="container flex h-14 items-center max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mr-4 hidden md:flex">
             <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -32,7 +32,8 @@ export default function Portfolio() {
         </div>
       </header>
       <main className="flex-1">
-        <section id="hero" className="py-24 md:py-32">
+        <section id="hero" className="py-24 md:py-32 relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-transparent z-[-5]"></div>
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
@@ -83,7 +84,8 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <section id="about" className="py-12 md:py-24 lg:py-32">
+        <section id="about" className="py-12 md:py-24 lg:py-32 relative">
+          <div className="absolute inset-0 bg-background/40 backdrop-blur-sm z-[-5]"></div>
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">About Me</h2>
@@ -211,7 +213,8 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <section id="skills" className="py-12 md:py-24 lg:py-32">
+        <section id="skills" className="py-12 md:py-24 lg:py-32 relative">
+          <div className="absolute inset-0 bg-background/40 backdrop-blur-sm z-[-5]"></div>
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Skills</h2>
@@ -230,7 +233,6 @@ export default function Portfolio() {
                   <Badge>HTML & CSS</Badge>
                   <Badge>JavaScript</Badge>
                   <Badge>SASS</Badge>
-
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2 p-4 bg-muted rounded-lg">
@@ -266,7 +268,8 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <section id="contact" className="py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section id="contact" className="py-12 md:py-24 lg:py-32 relative">
+          <div className="absolute inset-0 bg-background/40 backdrop-blur-sm z-[-5]"></div>
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
               <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Get In Touch</h2>
@@ -314,7 +317,7 @@ export default function Portfolio() {
           </div>
         </section>
       </main>
-      <footer className="border-t py-6 md:py-0">
+      <footer className="border-t py-6 md:py-0 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © {new Date().getFullYear()} Carles Arteche. All rights reserved.
