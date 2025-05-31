@@ -230,7 +230,8 @@ export default function Portfolio() {
                 <div className="flex flex-wrap gap-2 justify-center mt-2">
                   <Badge>Angular</Badge>
                   <Badge>TypeScript</Badge>
-                  <Badge>HTML & CSS</Badge>
+                  <Badge>HTML</Badge>
+                  <Badge>CSS</Badge>
                   <Badge>JavaScript</Badge>
                   <Badge>SASS</Badge>
                 </div>
