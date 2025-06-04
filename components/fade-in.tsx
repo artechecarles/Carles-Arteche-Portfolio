@@ -12,7 +12,7 @@ interface FadeInProps {
   className?: string
 }
 
-export function FadeIn({ children, delay = 0, duration = 800, direction = "up", className = "" }: FadeInProps) {
+export function FadeIn({ children, delay = 0, duration = 150, direction = "up", className = "" }: FadeInProps) {
   const [isVisible, setIsVisible] = useState(false)
   const elementRef = useRef<HTMLDivElement>(null)
 
