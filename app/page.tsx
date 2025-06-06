@@ -142,7 +142,7 @@ export default function Portfolio() {
                       <span className="font-medium">T-Systems</span>
                     </div>
                     <p className="text-muted-foreground">
-                      Working on full-stack development for a German client using Angular 14, Java 17 (Spring Boot), and
+                      Working on full-stack development for a German client using Angular 18, Java 17 (Spring Boot), and
                       Ng Zorro. Responsible for improving UI/UX with HTML/CSS, and collaborating in an agile environment
                       with CI pipelines and JIRA.
                     </p>
@@ -152,6 +152,7 @@ export default function Portfolio() {
                       <Badge variant="secondary">Java</Badge>
                       <Badge variant="secondary">Spring Boot</Badge>
                       <Badge variant="secondary">HTML & CSS</Badge>
+                      <Badge variant="secondary">GitHub</Badge>
                       <Badge variant="secondary">MySQL</Badge>
                       <Badge variant="secondary">Docker</Badge>
                     </div>
