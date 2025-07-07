@@ -134,7 +134,7 @@ export default function Portfolio() {
                       <h3 className="text-xl font-bold">Full Stack Developer</h3>
                       <div className="flex items-center text-sm text-muted-foreground">
                         <Calendar className="mr-1 h-4 w-4" />
-                        <span>Jul 2023 - Present</span>
+                        <span>Jul 2023 - Jul 2025</span>
                       </div>
                     </div>
                     <div className="flex items-center text-primary">
