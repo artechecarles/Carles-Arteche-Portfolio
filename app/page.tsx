@@ -126,6 +126,44 @@ export default function Portfolio() {
 
             <div className="max-w-3xl mx-auto space-y-8">
               <StaggeredFadeIn delay={400} stagger={300} duration={800}>
+              
+              <div className="relative pl-8 border-l-2 border-muted-foreground/20 pb-10">
+                  <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary"></div>
+                  <div className="space-y-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                      <h3 className="text-xl font-bold">Full Stack Developer</h3>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Calendar className="mr-1 h-4 w-4" />
+                        <span>Jul 2025 - Actuality</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center text-primary">
+                      <Building className="mr-2 h-4 w-4" />
+                      <span className="font-medium">ADP</span>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Working for ADP, a global leader in Human Capital Management (HCM) solutions, providing payroll, HR, and time management services to companies worldwide. Collaborating in an agile environment
+                      with CI pipelines and JIRA.
+                    </p>
+                    <div className="flex flex-wrap gap-2 pt-2">
+                      <Badge variant="secondary">Angular</Badge>
+                      <Badge variant="secondary">TypeScript</Badge>
+                      <Badge variant="secondary">HTML & CSS</Badge>
+                      <Badge variant="secondary">Java</Badge>
+                      <Badge variant="secondary">Git</Badge>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
                 {/* Experience Item 1 */}
                 <div className="relative pl-8 border-l-2 border-muted-foreground/20 pb-10">
                   <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary"></div>
