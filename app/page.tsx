@@ -126,6 +126,35 @@ export default function Portfolio() {
 
             <div className="max-w-3xl mx-auto space-y-8">
               <StaggeredFadeIn delay={400} stagger={300} duration={800}>
+
+
+
+            <div className="relative pl-8 border-l-2 border-muted-foreground/20 pb-10">
+                  <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary"></div>
+                  <div className="space-y-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                      <h3 className="text-xl font-bold">Frontend Developer</h3>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Calendar className="mr-1 h-4 w-4" />
+                        <span>Oct 2025 - Actuality</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center text-primary">
+                      <Building className="mr-2 h-4 w-4" />
+                      <span className="font-medium">WindowSight</span>
+                    </div>
+                    <p className="text-muted-foreground">
+                      WindowSight is a streaming platform that provides visual art and photography accessible and essential as music is today in everyone's daily lives.
+                    </p>
+                    <div className="flex flex-wrap gap-2 pt-2">
+                      <Badge variant="secondary">Angular</Badge>
+                      <Badge variant="secondary">TypeScript</Badge>
+                      <Badge variant="secondary">HTML</Badge>
+                      <Badge variant="secondary">TailWind</Badge>
+                      <Badge variant="secondary">Git</Badge>
+                    </div>
+                  </div>
+                </div>
               
               <div className="relative pl-8 border-l-2 border-muted-foreground/20 pb-10">
                   <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary"></div>
@@ -134,7 +163,7 @@ export default function Portfolio() {
                       <h3 className="text-xl font-bold">Full Stack Developer</h3>
                       <div className="flex items-center text-sm text-muted-foreground">
                         <Calendar className="mr-1 h-4 w-4" />
-                        <span>Jul 2025 - Actuality</span>
+                        <span>Jul 2025 - Oct 2025</span>
                       </div>
                     </div>
                     <div className="flex items-center text-primary">
@@ -300,6 +329,7 @@ export default function Portfolio() {
                   <Badge>CSS</Badge>
                   <Badge>JavaScript</Badge>
                   <Badge>SASS</Badge>
+                  <Badge>TailWind</Badge>
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2 p-4 bg-muted rounded-lg">
